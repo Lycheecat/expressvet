@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Express Vet | Klinik Hewan Kesayangan-Mu</title>
+    <link rel="stylesheet" href="../style/indexStyle.css">
 </head>
+
 <body>
-    
+    <main class="container">
+        <header>
+            <section class="title">
+                <h1>Express Vet</h1>
+                <p>Daftarkan hewan peliharaan Mu! </p>
+            </section>
+            <section class="content-1">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>Jadwal Pendaftaran</h3>
+                        <button>Refresh &#x27F3;</button>
+                    </div>
+                    <table class="schedule-table">
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Pemilik</th>
+                            <th>Nama Hewan</th>
+                            <th>Jenis Hewan Peliharaan</th>
+                            <th>Jenis Layanan</th>
+                            <th>Tanggal Berobat</th>
+                        </tr>
+                        <tbody id="table-body">
+                            <td>1</td>
+                            <td>Hugo</td>
+                            <td>Cherry</td>
+                            <td>Anjing</td>
+                            <td>Grooming</td>
+                            <td>10-05-2026</td>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </header>
+        <section class="content-2">
+            <form id="booking-form">
+                <label>
+                    Nama Pemilik
+                    <input type="text" placeholder="Masukkan nama pemilik">
+                </label>
+                <label>
+                    Nama Hewan Peliharaan
+                    <input type="text" placeholder="(opsional)">
+                </label>
+                <label>
+                    Jenis Hewan
+                    <select id="pet-type">
+                        <option>loading...</option>
+                    </select>
+                </label>
+                <label>
+                    Jenis Layanan
+                    <select>loading...</select>
+                </label>
+                <label>
+                    Jadwal Pertemuan
+                    <input type="date">
+                </label>
+                <button class="btn-submit" type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
 </body>
+
 </html>
