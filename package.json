@@ -1,0 +1,27 @@
+{
+  "name": "vet",
+  "version": "0.0.1",
+  "description": "web based vet registration ",
+  "keywords": [
+    "vetclinic"
+  ],
+  "homepage": "https://github.com/Lycheecat/expressvet#readme",
+  "bugs": {
+    "url": "https://github.com/Lycheecat/expressvet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lycheecat/expressvet.git"
+  },
+  "license": "ISC",
+  "author": "justine zefanya",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {}
+}
