@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Vet | Klinik Hewan Kesayangan-Mu</title>
+    <link rel="stylesheet" href="style/indexStyle.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <section class="title">
+                <h1>Express Vet</h1>
+                <p>Klinik Kesehatan Hewan Peliharaan</p>
+            </section>
+            <section class="content-1">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>Jadwal Pendaftaran</h3>
+                        <button id="btn-refresh">Refresh &#x27F3;</button>
+                    </div>
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Pemilik</th>
+                                <th>Nama Hewan</th>
+                                <th>Jenis Hewan</th>
+                                <th>Jenis Layanan</th>
+                                <th>Tanggal Berobat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- inject data -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </header>
+        <section class="content-2">
+            <form id="booking-form">
+                <label>Nama Pemilik
+                    <input type="text" id="owner-name" placeholder="Masukkan nama pemilik" required>
+                </label>
+                <label>Nama Hewan Peliharaan
+                    <input type="text" id="pet-name" placeholder="(opsional)">
+                </label>
+                <label>Jenis Hewan
+                    <select id="pet-type">
+                        <option value="Anjing">Anjing</option>
+                        <option value="Kucing">Kucing</option>
+                        <option value="Burung">Burung</option>
+                    </select>
+                </label>
+                <label>Jenis Layanan
+                    <select id="service-type">
+                        <option value="Grooming">Grooming</option>
+                        <option value="Vaksinasi">Vaksinasi</option>
+                        <option value="Pemeriksaan Rutin">Pemeriksaan Rutin</option>
+                    </select>
+                </label>
+                <label>Jadwal Pertemuan
+                    <input type="date" id="date" required>
+                </label>
+                <button class="btn-submit" type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

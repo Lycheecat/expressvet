@@ -5,9 +5,7 @@
 }
 
 body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../assets/linic.png");
+    background: linear-gradient(rgb(232, 164, 36) 20%,rgb(0, 0, 0) 80%);
 }
 
 .container{
@@ -19,7 +17,7 @@ body{
 }
 
 header{
-    background: linear-gradient(rgb(255, 148, 27)0%,#e7b872 80%);
+    background: linear-gradient(rgb(248, 248, 248)0%,#51390a 80%);
     width: 50vw;
     min-height: 60vh;
     border: 2px solid rgb(200, 200, 200);
@@ -32,11 +30,16 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
 }
 
 .content-1{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 table{
@@ -78,7 +81,8 @@ th,td{
 
 label{
     display: grid;
-    gap: 10px;
+    gap: 5px;
+    
 }
 
 btn-submit{
